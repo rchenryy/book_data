@@ -17,7 +17,7 @@ This project uses **dual-environment architecture**:
 **GitHub Pages**: Static site uses pre-generated JSON snapshot
 - No backend required
 - Data source: JSON file
-- URL: `https://rchenryy.github.io/book-dashboard/`
+- URL: `https://rchenryy.github.io/book_data/`
 
 ### Environment Detection
 
@@ -25,8 +25,7 @@ The frontend automatically detects where it's running:
 
 ```javascript
 function getDataSource() {
-  const isLocal = window.location.hostname === 'localhost' || 
-                  window.location.hostname === '127.0.0.1';
+  const isLocal = window.location.hostname === 3000 || PORT;
   
   if (isLocal) {
     return '/books/data';      // SQL via Express API
@@ -40,7 +39,7 @@ function getDataSource() {
 
 ```
 book-dashboard/
-├── public/              # Static assets (CSS, JS)
+├── public/             # Static assets (CSS, JS)
 ├── docs/               # GitHub Pages deployment
 │   ├── index.html     
 │   └── data/books.json # Database snapshot
@@ -49,8 +48,7 @@ book-dashboard/
 │   └── books.html     
 ├── routes/            # Express routes
 ├── db/                # Database connection
-├── server.js          # Express server
-└── generate-snapshot.js  # Creates JSON from database
+└── server.js          # Express server
 ```
 
 ## 🚀 Local Setup
