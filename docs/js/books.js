@@ -14,7 +14,7 @@ function getDataSource() {
     return '/books/data';
   } else {
     console.log('Running on GitHub Pages - using JSON snapshot');
-    return '/data/books.json';
+    return 'data/books.json';
   }
 }
 
