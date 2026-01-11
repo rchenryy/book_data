@@ -4,7 +4,7 @@ A personal book tracking dashboard displaying books with ratings, reviews, and r
 
 ## 🌐 Live Demo
 
-[View Live Dashboard](https://rchenryy.github.io/book-dashboard/)
+[View Live Dashboard](https://rchenryy.github.io/book_data/)
 
 ## 🏗️ How It Works
 
@@ -55,8 +55,8 @@ book-dashboard/
 
 1. Clone and install:
 ```bash
-git clone https://github.com/rchenryy/book-dashboard.git
-cd book-dashboard
+git clone https://github.com/rchenryy/book_data.git
+cd book_data
 npm install
 ```
 
