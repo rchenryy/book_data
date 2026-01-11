@@ -1,0 +1,9 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* Make Date column flexible */
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 10%;           /* small width */
+}
